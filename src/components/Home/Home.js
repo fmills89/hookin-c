@@ -5,8 +5,8 @@ import mainLogo from "../../assets/logos/hc-logo.png";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 const style = {
-  mainLogo: `rounded-md w-auto pl-6 `,
-  logoContainer: `flex flex-col  rounded-xl bg-slate-800 items-center`,
+  mainLogo: `rounded-md w-auto pl-6`,
+  logoContainer: `flex flex-col rounded-xl bg-slate-800 items-center`,
   button: `rounded-full animate-bounce shadow-lg shadow-lime-600/75 bg-lime-700`,
   buttonContainer: "p-4 m-4",
 };

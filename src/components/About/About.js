@@ -6,7 +6,7 @@ const style = {};
 function About() {
   return (
     <div name="about" className={repeatStyles.pageContainers}>
-      About
+      <p>Hookin C has been in business for over 8 years. Built on values </p>
     </div>
   );
 }
