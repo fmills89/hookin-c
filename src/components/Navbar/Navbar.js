@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Logo from "../../assets/logos/hookin-logo-sm.png";
 
 const style = {
-  container: `fixed w-full h-[200px] border-4 border-red-300 rounded-md flex items-center`,
-  ul: `flex p-4 justify-between justify-center`,
-  li: `p-4 cursor-pointer text-xl`,
-  logo: `rounded-lg hover:opacity-75 m-4 scale-50`,
+  container: `fixed w-full h-[80px] border-4 border-red-300 rounded-md`,
+  ul: `flex justify-center flex-wrap`,
+  li: `p-4 m-2 cursor-pointer hover:underline underline-offset-8 border rounded-md`,
+  logo: `rounded-lg hover:opacity-75 m-4`,
 };
 
 function Navbar() {
@@ -15,7 +14,6 @@ function Navbar() {
   };
   return (
     <div className={style.container}>
-      <img className={style.logo} src={Logo} />
       <ul className={style.ul}>
         <li className={style.li}>
           <Link
