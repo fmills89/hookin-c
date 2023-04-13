@@ -14,7 +14,7 @@ function About() {
       <div className={style.container}>
         <p className={style.about}>
           Hookin-C is family owned and has been operating for over 8 years. We
-          pride ourselves on provided the best in quality services and
+          pride ourselves on providing the best in quality services and
           experiences. We offer a multitude of services, see below.
         </p>
         <Link to="service" smooth="true" offset={50} duration={800}>

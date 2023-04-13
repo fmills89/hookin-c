@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FaBars, FaTimes, FaFacebookSquare } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
-import hookinLogo from "../../assets/logos/hookin-logo-sm.png";
+import hookinLogo from "../../assets/logos/skull.svg";
 
 const style = {
   container: `fixed flex justify-evenly md:justify-end w-full md:h-[100px] h-[80px] bg-stone-600/75 rounded-md opacity-75`,
