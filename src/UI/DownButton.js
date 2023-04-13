@@ -3,7 +3,7 @@ import React from "react";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 const style = {
-  button: `rounded-full animate-bounce shadow-lg shadow-lime-600/75 bg-lime-700 opacity-75`,
+  button: `rounded-full animate-bounce shadow-lg shadow-stone-900/75 bg-lime-700 opacity-75`,
   buttonContainer: "p-4 m-4",
 };
 
