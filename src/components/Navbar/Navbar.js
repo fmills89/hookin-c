@@ -7,14 +7,14 @@ import DownButton from "../../UI/DownButton";
 import navBg from "../../assets/bg/navbar-bg.png";
 
 const style = {
-  container: ` flex justify-end w-full md:h-[100px] h-[80px] bg-slate-900/75 rounded-md mb-auto`,
+  container: ` flex justify-end w-full md:h-[100px] h-[80px]  rounded-md mb-auto fixed top-0`,
   hookinLogoContainer: `flex justify-start m-1 w-full cursor-pointer `,
   hookinLogo: `rounded-lg `,
   logo: `rounded-lg hover:opacity-75 m-4`,
   button: ` md:w-[100px] w-14 md:w-20 h-[40px] rounded-md mt-5 md:mt-8 m-2 text-xs md:text-sm md:bg-stone-900/70 hover:underline underline-offset-4 md:ring ring-lime-800/75 ring-offset-0 text-slate-200`,
   navContainer: `hidden md:flex`,
   fbContainer: `w-1/6 flex justify-end`,
-  fbButton: `m-2 scale-75 md:scale-100`,
+  fbButton: `mx-3 scale-75 md:scale-100`,
   mobileMenu: `fixed top-0 left-0 w-full h-screen bg-stone-900 flex flex-col justify-center items-center`,
   mobileMenuText: `font-bold text-4xl p-4 text-slate-300 underline underline-offset-8`,
 };
