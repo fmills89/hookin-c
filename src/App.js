@@ -15,16 +15,8 @@ const style = {
 function App() {
   return (
     <>
-      {/* <div className={style.zindex40}>
-        <Navbar />
-      </div> */}
-      <div className={style.zindex30}>
-        <Home />
-      </div>
-      <div>
-        <About />
-      </div>
-
+      <Home />
+      <About />
       <Services />
       <Work />
       <Contact />

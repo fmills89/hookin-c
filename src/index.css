@@ -19,7 +19,7 @@
   background-image: url("./assets/bg/mobileZebra.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: left;
+  background-position: center;
 }
 
 .homeWallpaper {
@@ -33,4 +33,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.serviceWallpaper {
+  background-image: url("./assets/bg/service-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
