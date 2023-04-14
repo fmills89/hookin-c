@@ -27,3 +27,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.aboutWallpaper {
+  background-image: url("./assets/bg/about-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

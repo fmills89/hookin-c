@@ -11,7 +11,7 @@ import Navbar from "../Navbar/Navbar";
 const style = {
   mainContainer: `flex flex-col w-full h-screen flex justify-center items-center mobileWallpaper`,
   mainLogo: `rounded-lg w-auto px-6 m-auto`,
-  logoContainer: `flex flex-col bg-lime-900/50 rounded-xl items-center mx-4 pt-8 mb-auto`,
+  logoContainer: `flex flex-col bg-slate-900/50 rounded-xl items-center mx-4 pt-8 mb-auto`,
   landingPage: `w-full h-screen mb-20 flex justify-center items-center`,
 };
 
