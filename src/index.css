@@ -10,3 +10,20 @@
     @apply bg-stone-900/50;
   }
 }
+
+.mobile-menu-active .button {
+  @apply rounded-full animate-bounce shadow-lg shadow-stone-900/75 bg-lime-700;
+}
+
+.mobileWallpaper {
+  background-image: url("./assets/bg/mobileZebra.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
+.homeWallpaper {
+  background-image: url("./assets/bg/navbar-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
