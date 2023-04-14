@@ -146,12 +146,12 @@ function Navbar() {
               toggleMobileMenu();
               handleClick();
             }}
-            to="skills"
+            to="service"
             smooth={true}
             offset={50}
             duration={500}
           >
-            Skills
+            Services
           </Link>
         </li>
         <li className={style.mobileMenuText}>
