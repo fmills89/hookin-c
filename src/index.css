@@ -41,3 +41,7 @@
   background-size: cover;
   background-position: top;
 }
+
+.opacity {
+  opacity: 0.5;
+}
