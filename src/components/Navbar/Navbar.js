@@ -93,7 +93,7 @@ function Navbar() {
         </a>
       </button>
       <button className={style.fbButton}>
-        <a href="mailto:">
+        <a href="mailto:hookincs@gmail.com">
           <SiMinutemailer size={30} style={{ color: "white" }} />
         </a>
       </button>
