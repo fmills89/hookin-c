@@ -42,6 +42,16 @@
   background-position: top;
 }
 
-.opacity {
-  opacity: 0.5;
+.workWallpaper {
+  background-image: url("./assets/bg/work-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+.contactWallpaper {
+  background-image: url("./assets/bg/bb-bg.png.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
