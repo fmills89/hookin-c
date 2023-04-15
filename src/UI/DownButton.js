@@ -10,7 +10,7 @@ function DownButton() {
   return (
     <div className={style.buttonContainer}>
       <button className="button">
-        <BsFillArrowDownCircleFill size={30} />
+        <BsFillArrowDownCircleFill size={30} style={{ color: "white" }} />
       </button>
     </div>
   );

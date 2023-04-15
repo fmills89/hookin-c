@@ -22,11 +22,11 @@
   background-position: center;
 }
 
-.homeWallpaper {
+/* .homeWallpaper {
   background-image: url("./assets/bg/navbar-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} */
 
 .aboutWallpaper {
   background-image: url("./assets/bg/about-bg.png");
@@ -42,11 +42,11 @@
   background-position: top;
 }
 
-.workWallpaper {
+.homeWallpaper {
   background-image: url("./assets/bg/work-bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
 .contactWallpaper {
@@ -54,4 +54,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.workWallpaper {
+  background-image: url("./assets/bg/navbar-bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
 }

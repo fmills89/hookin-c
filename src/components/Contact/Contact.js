@@ -2,9 +2,11 @@ import React from "react";
 import { SiSolid } from "react-icons/si";
 import { repeatStyles } from "../../Style/style";
 import { FaRegHandPointLeft } from "react-icons/fa";
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
+import { Link } from "react-scroll/modules";
 
 const style = {
-  contactContainer: `w-full h-screen flex justify-center items-center contactWallpaper`,
+  contactContainer: `w-full h-screen flex flex-col justify-center items-center contactWallpaper`,
   formContainer: `max-w-[600px] w-full flex flex-col pb-8 border rounded-lg border-slate-800 shadow-lg bg-slate-800/75 p-2 md:p-4 m-2 text-slate-300`,
   inputForm: `p-2 rounded-md my-4 mb-4 md:w-1/2 w-5/6 bg-slate-100/75 text-black`,
   font: `font-bold text-2xl pb-4 flex flex-wrap items-baseline`,
@@ -12,6 +14,8 @@ const style = {
   fbContainer: `flex items-center pl-1`,
   fbLogo: `border p-2 m-2 bg-white border rounded-lg`,
   textArea: `w-auto md:h-[300px] h-auto rounded-lg p-2 font-light bg-slate-100/75 text-black mt-4`,
+  homeArrow: `rounded-full animate-bounce shadow-lg shadow-stone-900/75 bg-lime-700`,
+  homeButtonContainer: `w-full mr-52 flex justify-end`,
 };
 function Contact() {
   return (
@@ -55,6 +59,19 @@ function Contact() {
           rows="10"
         ></textarea>
       </form>
+      <Link
+        to="home"
+        smooth={true}
+        offset={50}
+        duration={800}
+        className={style.homeButtonContainer}
+      >
+        <BsFillArrowUpCircleFill
+          size={30}
+          className={style.homeArrow}
+          style={{ color: "white" }}
+        />
+      </Link>
     </div>
   );
 }

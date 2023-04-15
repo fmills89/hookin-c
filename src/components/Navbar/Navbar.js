@@ -11,7 +11,7 @@ const style = {
   hookinLogoContainer: `flex justify-start m-1 w-full cursor-pointer `,
   hookinLogo: `rounded-lg `,
   logo: `rounded-lg hover:opacity-75 m-4`,
-  button: ` md:w-[100px] w-14 md:w-20 h-[40px] rounded-md mt-5 md:mt-8 m-2 text-xs md:text-sm md:bg-stone-900/70 hover:underline underline-offset-4 md:ring ring-lime-800/75 ring-offset-0 text-slate-200`,
+  button: ` md:w-[100px] w-14 md:w-20 h-[40px] rounded-md mt-5 md:mt-8 m-2 text-xs md:text-sm md:bg-stone-900/70 hover:underline underline-offset-4 md:ring ring-stone-900/75 ring-offset-0 text-slate-200 shadow-xl`,
   navContainer: `hidden md:flex`,
   fbContainer: `w-1/6 flex justify-end`,
   fbButton: `mx-3 scale-75 md:scale-100`,
