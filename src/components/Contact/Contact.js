@@ -7,15 +7,15 @@ import { Link } from "react-scroll/modules";
 
 const style = {
   contactContainer: `w-full h-screen flex flex-col justify-center items-center contactWallpaper`,
-  formContainer: `max-w-[600px] w-full flex flex-col pb-8 border rounded-lg border-slate-800 shadow-lg bg-slate-800/75 p-2 md:p-4 m-2 text-slate-300`,
+  formContainer: `max-w-[600px] w-auto flex flex-col pb-8 border rounded-lg border-slate-900 shadow-lg bg-slate-800/75 p-2 md:p-4 m-2 text-slate-300`,
   inputForm: `p-2 rounded-md my-4 mb-4 md:w-1/2 w-5/6 bg-slate-100/75 text-black`,
   font: `font-bold text-2xl pb-4 flex flex-wrap items-baseline`,
   font2: `text-xl md:py-2 py-3 `,
   fbContainer: `flex items-center pl-1`,
   fbLogo: `border p-2 m-2 bg-white border rounded-lg`,
   textArea: `w-auto md:h-[300px] h-auto rounded-lg p-2 font-light bg-slate-100/75 text-black mt-4`,
-  homeArrow: `rounded-full animate-bounce shadow-lg shadow-stone-900/75 bg-lime-700`,
-  homeButtonContainer: `w-full mr-52 flex justify-end`,
+  homeArrow: `button`,
+  homeButtonContainer: `w-full mt-6 md:mr-52 flex justify-center md:justify-end`,
 };
 function Contact() {
   return (
