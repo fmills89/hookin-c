@@ -12,7 +12,11 @@
 }
 
 .mobile-menu-active .button {
-  @apply rounded-full animate-bounce shadow-lg shadow-stone-900/75 bg-lime-700;
+  @apply hidden;
+}
+
+.mobile-menu-active .form {
+  @apply hidden;
 }
 
 .mobileWallpaper {

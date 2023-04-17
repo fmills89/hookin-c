@@ -15,7 +15,7 @@ import { repeatStyles } from "../../Style/style";
 
 const style = {
   workContainer: `w-full h-screen flex justify-center items-center workWallpaper`,
-  picCollageContainer: `w-full h-full grid grid-cols-2 md:grid-cols-4 gap-6 py-4`,
+  picCollageContainer: `w-full h-full grid grid-cols-2 md:grid-cols-4 gap-1 py-4`,
   picsContainer: ` flex justify-center items-center m-1 md:m-4 overflow-hidden rounded-lg border-2 md:border-4 border-stone-900/75 bg-stone-900/50 hover:shadow-2xl hover:shadow-stone-900/75`,
   pics: `rounded-lg transition ease-in-out delay-150 md:hover:scale-110 duration-300`,
 };

@@ -23,7 +23,7 @@ function Navbar() {
   const [nav, setNav] = useState(false);
 
   //state slice to control when mobile menu is active/non
-  const [isMobileMenuActive, setIsMobileMenuActive] = useState(true);
+  const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
   // function to determine if mobileMenu is not active when to remove class and when to add back
   // issues w/ icons showing up under mobileMenu overlay
   function toggleMobileMenu() {
