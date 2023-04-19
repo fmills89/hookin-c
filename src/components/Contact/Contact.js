@@ -30,7 +30,7 @@ function Contact() {
     };
 
     console.log(details);
-    let response = await fetch("http://hookinc.netlify.app/", {
+    let response = await fetch("https://hookinc.netlify.app/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
