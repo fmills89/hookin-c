@@ -20,9 +20,29 @@ const style = {
   homeButtonContainer: `w-full flex justify-center md:justify-center pt-4`,
 };
 function Contact() {
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
+
+    console.log(details);
+    let response = await fetch("http://localhost:3500", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
+    let result = await response.json();
+    alert(result.status);
+  };
   return (
     <div name="contact" className={style.contactContainer}>
-      <form className={style.formContainer}>
+      <form className={style.formContainer} onSubmit={handleSubmit}>
         <p className={style.font}>
           Contact us on{" "}
           <div className={style.fbContainer}>
@@ -46,22 +66,27 @@ function Contact() {
           className={style.inputForm}
           type="text"
           placeholder="Name"
-          name="name"
+          id="name"
+          required
         />
         <input
           className={style.inputForm}
           type="email"
           placeholder="Email"
-          name="email"
+          id="email"
+          required
         />
         <textarea
           className={style.textArea}
           placeholder="Enter your message here.."
-          name="message"
+          id="message"
           rows="10"
+          required
         ></textarea>
         <div className={style.submitButtonContainer}>
-          <button className={style.submitButton}>Submit</button>
+          <button className={style.submitButton} type="submit">
+            Submit
+          </button>
         </div>
       </form>
       <Link
