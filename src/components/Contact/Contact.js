@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { SiSolid } from "react-icons/si";
 import { repeatStyles } from "../../Style/style";
 import { FaRegHandPointLeft } from "react-icons/fa";
 import { BsFillArrowUpCircleFill } from "react-icons/bs";
 import { Link } from "react-scroll/modules";
+import axios from "axios";
 
 const style = {
   contactContainer: `w-full h-screen flex flex-col justify-center items-center contactWallpaper`,
@@ -20,25 +21,70 @@ const style = {
   homeButtonContainer: `w-full flex justify-center md:justify-center pt-4`,
 };
 function Contact() {
+  const [data, setData] = useState({
+    name: "",
+    email: "",
+    message: "",
+    sent: false,
+    buttonText: "Submit",
+    err: "",
+  });
+
+  console.log({ ...data });
+
+  const resetForm = () => {
+    setData({
+      name: "",
+      email: "",
+      message: "",
+      sent: false,
+      buttonText: "Submit",
+      err: "",
+    });
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData({ ...data, [name]: value });
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
+    setData({ ...data, buttonText: "Sending..." });
 
-    console.log(details);
-    let response = await fetch("https://hookinc.netlify.app/", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(details),
-    });
-    let result = await response.json();
-    alert(result.status);
+    axios
+      .post("/api/sendmail", data)
+      .then((res) => {
+        if (res.data.result !== "success") {
+          setData({
+            ...data,
+            buttonText: "Failed to send!",
+            sent: false,
+            err: "fail",
+          });
+          setTimeout(() => {
+            resetForm();
+          }, 2000);
+        } else {
+          alert("Message sent");
+          setData({
+            ...data,
+            sent: true,
+            buttonText: "Sent",
+            err: "Success",
+          });
+          setTimeout(() => {
+            resetForm();
+          }, 2000);
+        }
+      })
+      .catch((err) => {
+        setData({
+          ...data,
+          buttonText: "Failed to send!",
+          err: "fail",
+        });
+      });
   };
   return (
     <div name="contact" className={style.contactContainer}>
@@ -66,26 +112,32 @@ function Contact() {
           className={style.inputForm}
           type="text"
           placeholder="Name"
-          id="name"
+          name="name"
+          value={data.name}
+          onChange={handleChange}
           required
         />
         <input
           className={style.inputForm}
           type="email"
           placeholder="Email"
-          id="email"
+          name="email"
+          value={data.email}
+          onChange={handleChange}
           required
         />
         <textarea
           className={style.textArea}
           placeholder="Enter your message here.."
-          id="message"
+          name="message"
           rows="10"
+          value={data.message}
+          onChange={handleChange}
           required
         ></textarea>
         <div className={style.submitButtonContainer}>
           <button className={style.submitButton} type="submit">
-            Submit
+            {data.buttonText}
           </button>
         </div>
       </form>
