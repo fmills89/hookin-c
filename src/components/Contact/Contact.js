@@ -21,74 +21,78 @@ const style = {
   homeButtonContainer: `w-full flex justify-center md:justify-center pt-4`,
 };
 function Contact() {
-  const [data, setData] = useState({
-    name: "",
-    email: "",
-    message: "",
-    sent: false,
-    buttonText: "Submit",
-    err: "",
-  });
+  // const [data, setData] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  //   sent: false,
+  //   buttonText: "Submit",
+  //   err: "",
+  // });
 
-  console.log({ ...data });
+  // console.log({ ...data });
 
-  const resetForm = () => {
-    setData({
-      name: "",
-      email: "",
-      message: "",
-      sent: false,
-      buttonText: "Submit",
-      err: "",
-    });
-  };
+  // const resetForm = () => {
+  //   setData({
+  //     name: "",
+  //     email: "",
+  //     message: "",
+  //     sent: false,
+  //     buttonText: "Submit",
+  //     err: "",
+  //   });
+  // };
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setData({ ...data, [name]: value });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setData({ ...data, [name]: value });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setData({ ...data, buttonText: "Sending..." });
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setData({ ...data, buttonText: "Sending..." });
 
-    axios
-      .post("/api/sendmail", data)
-      .then((res) => {
-        if (res.data.result !== "success") {
-          setData({
-            ...data,
-            buttonText: "Failed to send!",
-            sent: false,
-            err: "fail",
-          });
-          setTimeout(() => {
-            resetForm();
-          }, 2000);
-        } else {
-          alert("Message sent");
-          setData({
-            ...data,
-            sent: true,
-            buttonText: "Sent",
-            err: "Success",
-          });
-          setTimeout(() => {
-            resetForm();
-          }, 2000);
-        }
-      })
-      .catch((err) => {
-        setData({
-          ...data,
-          buttonText: "Failed to send!",
-          err: "fail",
-        });
-      });
-  };
+  //   axios
+  //     .post("/api/sendmail", data)
+  //     .then((res) => {
+  //       if (res.data.result !== "success") {
+  //         setData({
+  //           ...data,
+  //           buttonText: "Failed to send!",
+  //           sent: false,
+  //           err: "fail",
+  //         });
+  //         setTimeout(() => {
+  //           resetForm();
+  //         }, 2000);
+  //       } else {
+  //         alert("Message sent");
+  //         setData({
+  //           ...data,
+  //           sent: true,
+  //           buttonText: "Sent",
+  //           err: "Success",
+  //         });
+  //         setTimeout(() => {
+  //           resetForm();
+  //         }, 2000);
+  //       }
+  //     })
+  //     .catch((err) => {
+  //       setData({
+  //         ...data,
+  //         buttonText: "Failed to send!",
+  //         err: "fail",
+  //       });
+  //     });
+  // };
   return (
     <div name="contact" className={style.contactContainer}>
-      <form className={style.formContainer} onSubmit={handleSubmit}>
+      <form
+        className={style.formContainer}
+        method="POST"
+        action="https://getform.io/f/8b06f0ae-6711-49f8-a767-2eaaa9d520f1"
+      >
         <p className={style.font}>
           Contact us on{" "}
           <div className={style.fbContainer}>
@@ -113,8 +117,6 @@ function Contact() {
           type="text"
           placeholder="Name"
           name="name"
-          value={data.name}
-          onChange={handleChange}
           required
         />
         <input
@@ -122,22 +124,17 @@ function Contact() {
           type="email"
           placeholder="Email"
           name="email"
-          value={data.email}
-          onChange={handleChange}
           required
         />
         <textarea
           className={style.textArea}
           placeholder="Enter your message here.."
           name="message"
-          rows="10"
-          value={data.message}
-          onChange={handleChange}
           required
         ></textarea>
         <div className={style.submitButtonContainer}>
           <button className={style.submitButton} type="submit">
-            {data.buttonText}
+            Submit
           </button>
         </div>
       </form>
