@@ -1,3 +1,4 @@
+require("dotenv").config();
 const nodemailer = require("nodemailer");
 
 const pass = process.env.REACT_APP_NODEMAILER_PASS;
@@ -42,7 +43,7 @@ exports.handler = async function (event, context, callback) {
   } catch (error) {
     return {
       statusCode: 400,
-      body: JSON.stringify(error.emssage),
+      body: JSON.stringify(error.message),
     };
   }
 };
