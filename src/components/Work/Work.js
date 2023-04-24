@@ -16,8 +16,8 @@ import { repeatStyles } from "../../Style/style";
 import DownButton from "../../UI/DownButton";
 
 const style = {
-  workContainer: `w-full h-screen p-8 flex flex-col justify-center items-center workWallpaper`,
-  picCollageContainer: `w-full h-full grid grid-cols-2 md:grid-cols-4 gap-1 py-4`,
+  workContainer: `w-full h-[2800px] md:h-[700px] p-8 flex flex-col justify-center items-center workWallpaper`,
+  picCollageContainer: `w-full h-full grid grid-cols-1 md:grid-cols-4 gap-1 py-4`,
   picsContainer: ` flex justify-center items-center m-1 md:m-4 overflow-hidden rounded-lg border-2 md:border-4 border-stone-900/75 bg-stone-900/50 hover:shadow-2xl hover:shadow-stone-900/75`,
   pics: `rounded-lg transition ease-in-out delay-150 md:hover:scale-110 duration-300`,
   buttonContainer: ``,

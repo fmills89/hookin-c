@@ -5,7 +5,7 @@ import DownButton from "../../UI/DownButton";
 
 const style = {
   mainContainer: `w-full h-screen flex justify-center items-center aboutWallpaper`,
-  container: `flex flex-col rounded-xl items-center mx-8 pt-8 mt-20 `,
+  container: `flex flex-col rounded-xl items-center mx-10 my-14 `,
   about: `p-20 m-2 text-lg md:text-2xl border border-stone-800/50 text-slate-100 rounded-lg bg-slate-800/75 font-bold tracking-wide leading-relaxed text-center text-slate-300`,
 };
 
