@@ -14,7 +14,7 @@ function Footer() {
       <button className={style.button}>
         <a
           className={style.linkFont}
-          href="https://fmills89.github.io/portfolio/"
+          href="https://fmills89-portfolio.netlify.app/"
         >
           Click here!
         </a>
