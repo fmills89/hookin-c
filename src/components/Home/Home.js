@@ -10,7 +10,7 @@ import Navbar from "../Navbar/Navbar";
 
 const style = {
   mainContainer: `flex flex-col w-full h-screen justify-center items-center homeWallpaper`,
-  mainLogo: `rounded-lg w-auto p-6 m-auto shadow-lg border border-stone-900 bg-stone-900/50 `,
+  mainLogo: `rounded-lg w-auto p-6 m-auto shadow-lg border border-stone-900 bg-slate-900/50 `,
   logoContainer: `flex flex-col  rounded-xl items-center mx-4 pt-8 m-auto`,
   landingPage: `w-full h-screen mb-20 flex justify-center items-center`,
 };
