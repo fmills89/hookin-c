@@ -8,7 +8,7 @@ import axios from "axios";
 
 const style = {
   contactContainer: `w-full h-screen flex flex-col justify-center items-center contactWallpaper`,
-  formContainer: `max-w-[600px] w-auto h-[650px] flex flex-col border rounded-lg border-slate-900 shadow-lg bg-slate-800/75 p-2 md:p-4 m-2 mt-4 text-slate-300 scale-75 md:scale-100 form`,
+  formContainer: `max-w-[600px] w-auto h-[550px] md:h-[600px] flex flex-col border rounded-lg border-slate-900 shadow-lg bg-slate-800/75 p-2 md:p-4 m-2 mt-4 text-slate-300 scale-75 md:scale-100 form`,
   inputForm: `p-2 rounded-md my-4 mb-4 w-full bg-slate-100/75 text-black`,
   font: `font-bold text-2xl pb-4 flex flex-wrap items-baseline`,
   font2: `text-xl md:py-2 py-3 `,
