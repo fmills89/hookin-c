@@ -7,14 +7,14 @@ import { Link } from "react-scroll/modules";
 import axios from "axios";
 
 const style = {
-  contactContainer: `w-full h-screen flex flex-col justify-center items-center contactWallpaper`,
-  formContainer: `max-w-[600px] w-auto h-[550px] md:h-[600px] flex flex-col border rounded-lg border-slate-900 shadow-lg bg-slate-800/75 p-2 md:p-4 m-2 mt-4 text-slate-300 scale-75 md:scale-100 form`,
+  contactContainer: `w-full h-[1200px] flex flex-col justify-center items-center contactWallpaper`,
+  formContainer: `max-w-[600px] w-auto h-[650px] md:h-[700px] flex flex-col border rounded-lg border-slate-900 shadow-lg bg-slate-800/75 p-2 md:p-4 m-2 mt-4 text-slate-300 scale-75 md:scale-100 form`,
   inputForm: `p-2 rounded-md my-4 mb-4 w-full bg-slate-100/75 text-black`,
   font: `font-bold text-2xl pb-4 flex flex-wrap items-baseline`,
   font2: `text-xl md:py-2 py-3 `,
   fbContainer: `flex items-center pl-1`,
   fbLogo: `border p-2 m-2 bg-white border rounded-lg`,
-  textArea: `w-auto md:h-[300px] h-auto rounded-lg p-2 font-light bg-slate-100/75 text-black mt-4`,
+  textArea: `w-auto h-[400px] md:h[600px] rounded-lg p-2 font-light bg-slate-100/75 text-black mt-4`,
   submitButtonContainer: `w-auto p-1 flex justify-center`,
   submitButton: `border border-stone-900 shadow-lg bg-stone-900 md:p-4 p-3 md:m-4 m-2 rounded-lg`,
   homeArrow: `button rounded-full animate-bounce shadow-lg shadow-stone-900/75 bg-lime-700 button`,
